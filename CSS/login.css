@@ -53,6 +53,12 @@ body{
     margin-left: 20%;
     margin-bottom: 15px;
     width: 60%;
+    border: none;
+    border-bottom: solid 1px #0192E3;  
+    outline: none; 
+}
+.formulario input:focus{
+    border-bottom: solid 2px #106ABC; 
 }
 .formulario button{
     width: 20%;
