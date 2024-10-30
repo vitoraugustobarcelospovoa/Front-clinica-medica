@@ -1,6 +1,32 @@
 .ladoimg{
-    background-color: red;
+    background-color: #106ABC;
     width: 50%;
-    border: 10%;
-    height: 200px;
+    height: 80vh;
+
+    border-bottom: solid black;
+    border-top: solid black;
+    border-left: solid black;
+margin: auto;   
+}
+.ladoform{
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    background-color: white;
+    width: 50%;
+    border: solid black;
+margin: auto;
+}
+body{
+    display: flex;
+ 
+}
+.container{
+    margin-top: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    border: solid black;
 }
