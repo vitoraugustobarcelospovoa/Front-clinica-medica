@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clinica Medica</title>
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <!--Botão voltar ao topo-->
+    <div id="backToTop" class="fixed-button">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <!--Botão WhatsApp-->
+    <div id="whatsappButton" class="fixed-button">
+        <i class="bi bi-whatsapp"></i>
+    </div>
+
+    <!--Container Geral-->
+    <div class="container">
+
+     <!--Header-->
+     <header class="header">
+        <div class="logo">
+            <img src="IMG/Pomba.png" alt="logo">
+        </div>
+        <div class="menu">
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="menu-aberto">
+            <nav class="nav-menu">
+                <a href="#">ADM</a>
+                <a href="#apresentação">APRESENTAÇÃO</a>
+                <a href="#missao">MISSÃO</a>
+                <a href="#servicos">ATIVIDADES</a>
+                <a href="#portfolio">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+    <!--Fim Header-->
+
+    <!--Apresentação-->
+    <section id="apresentação" class="inicio">
+        <div class="container-inicio">
+            <div class="conteudo-inicio" >
+                <div class="img-inicio" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <img src="IMG/Pomba.png" >
+                </div>
+                <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente asperiores expedita repellendus libero placeat aliquam ad necessitatibus eum praesentium. Iure perspiciatis voluptatem eaque dolores explicabo nihil facilis, qui nesciunt sit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fim Apresentação-->
+
+    <!--Missão-->
+    <section id="missao" class="missao">
+        <div class="container-missao">
+            <div class="headline-missao" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-scroll" id="headline-scroll">
+                    <span class="bold">Missão</span>
+                    <span class="divisor"></span>
+                    <span class="light">Vissão</span>
+                    <span class="divisor"></span>
+                    <span class="bold">Valores</span>
+                    <span class="divisor"></span>
+                    <span class="light">Missão</span>
+                    <span class="divisor"></span>
+                    <span class="bold">Vissão</span>
+                    <span class="divisor"></span>
+                    <span class="light">Valores</span>
+                    <span class="divisor"></span>
+                </div>
+            </div>
+            <div class="conteudo-missao">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="textos-missao">
+                        <h1>Missão</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates tempora quas aspernatur ipsam a aperiam eos ducimus deleniti rerum delectus alias officia est sed labore assumenda, sequi officiis cumque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+                <!-- AOS -->
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+                <!-- Inicialização do AOS -->
+                <script>
+                    AOS.init();
+                </script>
+
+                <!--JavaScript-->
+                <script src="JS/botão.js"></script>
+                <script src="JS/header.js"></script>
+                <script src="JS/menu.js"></script>
+                <script src="JS/missao.js"></script>
 </body>
 </html>
