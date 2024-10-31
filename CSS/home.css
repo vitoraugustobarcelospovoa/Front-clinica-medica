@@ -1,55 +1,91 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.verticalMenu {
+.header-home {
     display: flex;
-    background-color: #106ABC;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 4px;
+}
+
+.logo-div {
     width: 5%;
-    height: 80vh;
-    color: #000000;
 }
 
-.verticalMenu:hover {
-    width: 8%;
+.logo-header {
+    height: 100%;
+    width: 100%;
 }
 
-.navVertical {
-    list-style-type: none; 
-    padding: 0; 
+.espaço-header {
+    width: 75%;
 }
 
-.nav-item {
-    margin: 10px 0; 
+.adm-div {
+    padding-top: 10px;
+    text-align: right;
+    width: 15%;
 }
 
-.nav-link {
-    color: #000000;
-    text-decoration: none; 
-    display: block; 
-    padding: 10px; 
+.logo-adm {
+    height: 70%;
+    width: 20%;
 }
 
-.nav-link:hover {
-    background-color: #e0e0e0; 
+.titulo-adm {
+    width: 5%;
 }
 
-footer {
-    height: 10vh;
+.adm {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+    display: flex;
+    height: 640px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.menu-vertical {
+    display: block;
+    width: 5%;
+    height: 100%;
+    background-color: #106ABC;
+}
+
+.menu-vertical:active {
+    width: 10%;
+.botao-menu {
+    width: 23%;
+}
+}
+
+.botao-div-menu {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botao-menu {
+    width: 40%;
+    height: 30%;
+    filter: invert(1) opacity(1.0);
+}
+
+.botao-menu:hover {
+    filter: invert(1) opacity(0.8);
+}
+
+.footer-home {
+    height: 60px;
     width: 100%;
     background-color: #0192E3;
 }
 
-header {
-    background-color: #ffffff;
-    height: 10vh;
-    width: 100%;
-    box-shadow: #000000;
-}
-
-img {
-    height: 20%;
-    width: 5%;
-}
