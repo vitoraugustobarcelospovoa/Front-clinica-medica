@@ -89,3 +89,63 @@ body {
     background-color: #0192E3;
 }
 
+.cadastro-conteudo {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    height: 210px;
+    width: 100%;
+}
+
+.agendamento-conteudo {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    height: 210px;
+    width: 100%;
+}
+
+.atendimento-conteudo {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    height: 210px;
+    width: 100%;
+}
+
+.cadastro-conteudo-div {
+    display: flex;
+}
+
+.convenio-img {
+    height: 120px;
+    width: 100px;
+    margin-left: 60px;
+}
+
+.especialidade-img {
+    height: 120px;
+    width: 100px;
+    margin-left: 55px;
+}
+.medicos-img {
+    height: 120px;
+    width: 100px;
+    margin-left: 55px;
+}
+.usuarios-img {
+    height: 120px;
+    width: 100px;
+    margin-left: 55px;
+}
+.paciente-img {
+    height: 130px;
+    width: 110px;
+    margin-left: 55px;
+}
+
+.cadastro-conteudo-titulo {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 15px;
+}
