@@ -1,3 +1,8 @@
+@font-face{ 
+    font-family: "Roboto";
+    src: url("FONT/Roboto/RobotoCondensed-Regular.ttf");
+}
+
 .ladoimg{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -43,9 +48,6 @@ body{
     flex-direction: column;
 
 }
-.d-flex input{
-    
-}
 .formulario{
     height: 50%;
     transform: translateY(50%);
@@ -57,11 +59,19 @@ body{
     border: none;
     border-bottom: solid 1px #0192E3;  
     outline: none; 
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 .formulario input:focus{
     border-bottom: solid 2px #106ABC; 
 }
+H1{
+    font-family: "Roboto";
+    font-weight: bolder;
+}
 .formulario button{
+    font-family: "Roboto";
+    font-weight: bolder;
     width: 20%;
     border: none;
     border-radius: 3px;
