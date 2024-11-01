@@ -232,10 +232,20 @@ body {
 }
 
 .degrade-azul-branco {
+    width: 62%;
     height: 7px;
     background-image: linear-gradient(to right, #007bff, #ffffff);
   }
 
+  .links {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .links:hover {
+    filter: opacity(0.7);
+  }
   
 
   @media (max-width: 600px) {
