@@ -7,7 +7,7 @@ body{
 }
 footer{
     position: fixed;
-    transform: translateY(86vh);
+    bottom: 0;
 }
 h1{
     padding-left: 35%;
