@@ -12,7 +12,7 @@
     height: auto; /* Mantém a proporção da imagem */
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1000px) {
     .inicio h1 {
         font-size: 70px;
     }
