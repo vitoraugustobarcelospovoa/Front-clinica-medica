@@ -1,5 +1,8 @@
-.body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: "Roboto";
+    font-weight: bolder;
     margin: 0;
     padding: 0;
 }
@@ -44,8 +47,9 @@
             display: block;
         }
         .nav-menu img{
-            width: 50px;
-            height: 50px;
+            width: 90px;
+            height: auto;
+            max-width: 100%;
         }
         .nav-menu a:hover {
             background-color: #555;
@@ -182,9 +186,10 @@
             padding: 10px;
         }
 
-        .contato-logo{
-            width: 10px;
-            height: 10px;
+        .contato-logo img{
+            width: 300px;
+            height: auto;
+            max-width: 100%;
         }
 
         .contato-nav li{
