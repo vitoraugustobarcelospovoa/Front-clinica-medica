@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/usuarios.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <header class="header-home">
+        <div class="logo-div">
+            <img src="CSS/IMG/Pomba.png" class="logo-header" alt="Logo">
+        </div>
+
+        <div class="espaço-header"></div>
+
+        <div class="adm-div">
+            <img src="CSS/IMG/icon-adm.png" class="logo-adm" alt="Logo-adm">
+            <h2 class="adm">Admin</h2>
+        </div>
+    </header>
+
+    <section id="principal" class="principal">
+        <div class="menu-vertical">
+            <div class="botao-div-menu">
+                <img src="CSS/IMG/botao-menu.png" class="botao-menu" alt="Botão">
+            </div>
+        </div>
+        <div class="cadastro">
+            <h1>Cadastro de Usuário</h1>
+
+            <div class="barra-botoes"> 
+                <img src="CSS/IMG/Adicionar.png" alt="">
+                <button style="height: 40px;" class="adicionar" id="btnAdicionar">Adicionar Usuário</button>
+                <img src="CSS/IMG/Deletar.png" alt="">
+                <button class="excluir" id="btnExcluir">Excluir Usuário</button>
+                <input class="campo" type="text" id="buscarNome" placeholder="Buscar">
+                <button class="pesquisar" id="btnPesquisar">Buscar</button>
+            </div>                    
+
+            <form id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <ul id="resultadoPesquisa"></ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaUsuarios"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer-home"></footer>
+
+    <script src="JS/usuarios.js"></script>
+</body>
+</html>

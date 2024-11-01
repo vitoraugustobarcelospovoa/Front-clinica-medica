@@ -1,0 +1,169 @@
+@font-face{ 
+    font-family: "Roboto";
+    src: url("FONT/Roboto/RobotoCondensed-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+
+.header-home {
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-top: -50px;
+    z-index: 1000;
+}
+
+.logo-div {
+    width: 5%;
+}
+
+.logo-header {
+    height: 100%;
+    width: 100%;
+}
+
+.espaço-header {
+    width: 75%;
+}
+
+.adm-div {
+    padding-top: 10px;
+    text-align: right;
+    width: 15%;
+}
+
+.logo-adm {
+    height: 70%;
+    width: 20%;
+}
+
+.titulo-adm {
+    width: 5%;
+}
+
+.adm {
+    font-size: 17px;
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+
+.principal {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+.menu-vertical {
+    position: fixed;
+    display: block;
+    width: 5%;
+    height: 100%;
+    background-color: #106ABC;
+    z-index: 2000;
+}
+
+.menu-vertical:active {
+    width: 10%;
+
+}
+
+.botao-menu {
+    width: 23%;
+}
+
+
+.botao-div-menu {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botao-menu {
+    width: 40%;
+    height: 30%;
+    filter: invert(1) opacity(1.0);
+}
+
+.botao-menu:hover {
+    filter: invert(1) opacity(0.8);
+}
+
+.footer-home {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0192E3;
+    padding: 10px;
+    z-index: 3000;
+}
+
+.container {
+    width: 70%;
+    padding: 20px;
+    height: 80vh;
+    padding-top: 2%;
+    padding-left: 15%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.selecao-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.selecao-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .selecao-container {
+        flex-direction: column;
+    }
+}
+
