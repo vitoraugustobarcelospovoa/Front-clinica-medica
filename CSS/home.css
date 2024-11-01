@@ -1,15 +1,22 @@
+@font-face{ 
+    font-family: "Roboto";
+    src: url("FONT/Roboto/RobotoCondensed-Regular.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 .header-home {
+    position: fixed;
     display: flex;
     height: 50px;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    margin-bottom: 4px;
+    margin-top: -50px;
+    z-index: 1000;
 }
 
 .logo-div {
@@ -42,21 +49,32 @@ body {
 
 .adm {
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .principal {
     display: flex;
-    height: 640px;
+    height: 700px;
     width: 100%;
     background-color: #ffffff;
+    margin-top: 50px;
 }
 
+.principal-conteudo {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+
 .menu-vertical {
+    position: fixed;
     display: block;
     width: 5%;
     height: 100%;
     background-color: #106ABC;
+    z-index: 2000;
 }
 
 .menu-vertical:active {
@@ -84,9 +102,11 @@ body {
 }
 
 .footer-home {
+    position: absolute;
     height: 60px;
     width: 100%;
     background-color: #0192E3;
+    z-index: 3000;
 }
 
 .cadastro-conteudo {
@@ -126,7 +146,7 @@ body {
 .img {
     height: 110px;
     width: 100px;
-    margin-left: 65px;
+    margin-left: 75px;
 }
 
 .cadastro-conteudo-titulo {
@@ -135,8 +155,8 @@ body {
     padding-bottom: 15px;
     margin-left: 30px;
     font-size: 32px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .convenio {
@@ -145,52 +165,91 @@ body {
     margin-top: 5px;
     margin-left: 82px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 
+}
+
+.prontuario {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 82px;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .especialidade {
     margin: 0px;
     padding: 0px;
     margin-top: 5px;
-    margin-left: 47px;
+    margin-left: 68px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .medicos {
     margin: 0px;
     padding: 0px;
     margin-top: 5px;
-    margin-left: 78px;
+    margin-left: 89px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .usuarios {
     margin: 0px;
     padding: 0px;
     margin-top: 5px;
-    margin-left: 72px;
+    margin-left: 82px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .pacientes {
     margin: 0px;
     padding: 0px;
     margin-top: 5px;
-    margin-left: 78px;
+    margin-left: 83px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: bolder;
 }
 
 .degrade-azul-branco {
     height: 7px;
     background-image: linear-gradient(to right, #007bff, #ffffff);
+  }
+
+  
+
+  @media (max-width: 600px) {
+    .menu-vertical {
+        display: none;
+    }
+
+    .principal-conteudo {
+        padding-left: 0%;
+        display: block;
+    }
+
+    .adm-div {
+        padding-top: 10px;
+        text-align: right;
+        width: 60%;
+    }
+
+    .logo-div {
+        width: 30%;
+    }
+    
+    .logo-header {
+        height: 100%;
+        width: 100%;
+    }
+
   }
