@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.botao-menu-mobile{
+    display: none;
+}
 
 .header-home {
     position: fixed;
@@ -82,6 +85,9 @@ body {
 .botao-menu {
     width: 23%;
 }
+}
+.Admin-mobile{
+    display: none;
 }
 
 .botao-div-menu {
