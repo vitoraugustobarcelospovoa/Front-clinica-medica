@@ -44,25 +44,34 @@
             <h1 class="titulo-cadastro-convenio">Cadastro de Convênio</h1>
 
             <form>
+                <div class="labels">
+                    <label for="nome">Nome</label>
+                    <label class="second-label" for="plano">Plano</label>
+                </div>
                 <div class="form-row">
-                    <label for="nome">Nome</label><br>
                   <input type="text" placeholder="Nome">
-                    <label for="plano">Plano</label><br>
                   <input type="text" placeholder="Tipo de plano">
                 </div>
-                <div class="form-row">
+
+                <div class="labels">
                     <label for="coberturas">Coberturas</label>
-                  <input id="coberturas" type="text" placeholder="Coberturas">
-                    <label for="contato">Contato</label>
-                  <input id="contato" type="number" placeholder="Contato">
-                  <label for="email">Email</label>
-                  <input id="email" type="email" placeholder="Email">
+                    <label class="third-label" for="contato">Contato</label>
+                    <label class="third-label" for="email">Email</label>
                 </div>
                 <div class="form-row">
+                  <input id="coberturas" type="text" placeholder="Coberturas">
+                  <input id="contato" type="number" placeholder="Contato">
+                  <input id="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="labels">
                     <label for="endereco">Outras informações</label>
+                </div>
+                <div class="form-row">
                   <textarea placeholder="Outras informações" rows="5"></textarea>
                 </div>
               </form>
+              <button type="submit" class="botao-submit">Cadastrar</button>
         </div>
 
             
