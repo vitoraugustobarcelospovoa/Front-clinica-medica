@@ -58,6 +58,7 @@ body {
     margin-right: auto;
 }
 
+
 .cadastro-conteudo-titulo {
     font-size: 32px;
     font-weight: bolder;
@@ -100,10 +101,18 @@ body {
     .menu-vertical {
         display: none;
     }
+
+    .separa-footer {
+        margin-bottom: 100px;
+    }
 }
 
 @media (min-width: 992px) {
     .principal {
         margin-left: 6%; /* Deixa o conteúdo principal à direita do menu */
     }
+}
+
+.separa-footer {
+    margin-bottom: 100px;
 }
