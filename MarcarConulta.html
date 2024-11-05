@@ -1,65 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="CSS/MarcarConsulta.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcar Consulta</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o seu CSS personalizado -->
+    <link rel="stylesheet" href="CSS/conveniobt.css">
 </head>
 <body>
-    <header class="header-home">
-        <a href="home.html">
+
+    <!-- Cabeçalho fixo -->
+    <header class="header-home fixed-top d-flex justify-content-between align-items-center p-3 shadow-sm bg-white">
+        <div class="logo-div">
             <img src="CSS/IMG/logo.png" class="logo-header" alt="Logo">
-        </a>
-
-        <div class="espaço-header">
-
         </div>
-
-        <div class="adm-div">
-            <img src="CSS/IMG/icon-adm.png" class="logo-adm" alt="Logo-adm">
-        </div class="titulo-adm">
-            <h2 class="adm">Admin</h2>
-        <div>
-
+        <div class="titulo-adm d-flex align-items-center ms-auto">
+            <img src="CSS/IMG/icon-adm.png" class="logo-adm me-2" alt="Logo-adm">
+            <h2 class="adm m-0">Admin</h2>
         </div>
     </header>
 
-    <section id="principal" class="principal">
-        <div class="menu-vertical">
-            <div class="botao-div-menu">
-                <img src="CSS/IMG/botao-menu.png" class="botao-menu" alt="Botão">
-            </div>
+    <!-- Container Principal -->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="menu-vertical col-lg-2 bg-primary text-white d-none d-lg-flex flex-column vh-100 position-fixed"></div>
+
+            <!-- Conteúdo Principal -->
+            <main class="col-lg-10 offset-lg-2 mt-4">
+                <section class="principal">
+                    <div class="container my-5">
+                        <h1 class="text-center mb-4">Marcar Consulta</h1>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="selecionarUsuario" class="form-label">Selecione um usuário:</label>
+                                <select id="selecionarUsuario" class="form-select">
+                                    <option value="">-- Selecione um usuário --</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="selecionarMedico" class="form-label">Selecione um Médico:</label>
+                                <select id="selecionarMedico" class="form-select">
+                                    <option value="">-- Selecione um Médico --</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="selecionarConvenio" class="form-label">Selecione um Convênio:</label>
+                                <select id="selecionarConvenio" class="form-select">
+                                    <option value="">-- Selecione um Convênio --</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-        <div class="container">
-            <h1>Marcar Consulta</h1>
-            <div class="selecao-container">
-                <div class="selecao-item">
+    </div>
 
-                    <label for="selecionarUsuario">Selecione um usuário:</label>
-                    <select id="selecionarUsuario">
-                        <option value="">-- Selecione um usuário --</option>
-                    </select>
-                </div>
-                <div class="selecao-item">
-                    <label for="selecionarMedico">Selecione um Médico:</label>
-                    <select>
-                        <option value="">-- Selecione um Médico</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <label for="selecionarConvenio">Selecione um Convênio</label>
-                <select>
-                    <option value="">-- Selecione um Convênio</option>
-                </select>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer-home">
-
+    <!-- Rodapé fixo -->
+    <footer class="footer-home bg-primary text-white text-center py-3 fixed-bottom">
+        <p>© 2024 Empresa X</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="JS/listarusuarios.js"></script>
+    <!-- Link do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
