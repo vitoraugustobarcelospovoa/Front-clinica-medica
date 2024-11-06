@@ -49,13 +49,12 @@ body{
 
 }
 .formulario{
-    height: 50%;
+
     transform: translateY(50%);
 }
 .formulario input{
     margin-left: 20%;
     margin-bottom: 15px;
-    width: 60%;
     border: none;
     border-bottom: solid 1px #0192E3;  
     outline: none; 
