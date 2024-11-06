@@ -12,7 +12,7 @@ body {
 .header-home {
     z-index: 1000;
     width: 100%;
-    height: 60px; /* Ajuste de altura */
+    height: 60px;
 }
 
 .logo-header {
@@ -38,26 +38,23 @@ body {
 }
 
 .menu-vertical {
-    position: fixed; /* Fixa o menu na lateral esquerda */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 80px; /* Largura fixa do menu */
-    height: 100vh; /* Ocupa toda a altura da tela */
-    background-color: #106ABC; /* Cor de fundo */
+    width: 80px;
+    height: 100vh;
+    background-color: #106ABC;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 20px;
-    z-index: 900; /* Certifique-se de que o menu fique acima do conteúdo */
+    z-index: 900;
 }
 
-.menu-vertical img {
-    width: 80%; /* Faz a imagem ocupar 80% da largura do menu */
-    max-width: 120px; /* Limita o tamanho máximo da imagem */
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    margin-top: 5rem;
+    max-width: 800px;
 }
-
 
 .cadastro-conteudo-titulo {
     font-size: 32px;
@@ -65,12 +62,14 @@ body {
     margin-left: 5%;
 }
 
-.convenio-img,
-.img {
-    height: 110px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.btn-primary {
+    background-color: #106ABC;
+    border-color: #106ABC;
+}
+
+.btn-primary:hover {
+    background-color: #0d5c9d;
+    border-color: #0d5c9d;
 }
 
 .degrade-azul-branco {
@@ -109,7 +108,7 @@ body {
 
 @media (min-width: 992px) {
     .principal {
-        margin-left: 6%; /* Deixa o conteúdo principal à direita do menu */
+        margin-left: 6%;
     }
 }
 
