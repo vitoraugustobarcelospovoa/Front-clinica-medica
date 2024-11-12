@@ -1,0 +1,182 @@
+<!--    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col"><input type="checkbox"></th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Data da Consulta</th>
+                                <th scope="col">Hora da Consulta</th>
+                                <th scope="col">Retorno</th>
+                                <th scope="col">Cancelado</th>
+                                <th scope="col">Motivo do Cancelamento</th>
+                                <th scope="col">Médico</th>
+                                <th scope="col">Paciente</th>
+                                <th scope="col">Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>2024-11-15</td>
+                                <td>09:30</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td>-</td>
+                                <td>Dr. João Silva</td>
+                                <td>Ana Maria</td>
+                                <td>Admin</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>2024-11-20</td>
+                                <td>14:00</td>
+                                <td>Não</td>
+                                <td>Sim</td>
+                                <td>Paciente indisponível</td>
+                                <td>Dra. Fernanda Souza</td>
+                                <td>Lucas Pereira</td>
+                                <td>Admin</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>2024-12-01</td>
+                                <td>11:00</td>
+                                <td>Não</td>
+                                <td>Não</td>
+                                <td>-</td>
+                                <td>Dr. Carlos Lima</td>
+                                <td>Beatriz Santos</td>
+                                <td>Admin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/homebt.css">
+    <link rel="stylesheet" href="CSS/tabelas.css">
+    <title>Especialidades</title>
+
+</head>
+<body>
+
+    <header class="header-home fixed-top d-flex justify-content-between align-items-center p-3 shadow-sm bg-white">
+        <div class="logo-div">
+            <a href="homebt.html">
+            <img src="CSS/IMG/logo.png" class="logo-header" alt="Logo">
+        </a>
+        </div>
+
+        <div class="titulo-adm d-flex align-items-center ms-auto">
+            <img src="CSS/IMG/icon-adm.png" class="logo-adm me-2" alt="Logo-adm">
+            <h2 class="adm m-0">Admin</h2>
+        </div>
+    </header>
+
+    <main id="principal" class="principal mt-5 pt-5">
+        <!-- Menu Lateral -->
+        <div class="menu-vertical bg-primary text-white d-none d-lg-block vh-100">
+            <!--
+            <div class="botao-div-menu text-center py-4">
+                <img src="CSS/IMG/botao-menu.png" class="botao-menu" alt="Botão">
+            </div>
+        -->
+        </div>
+
+            <div class="col-10 principal-conteudo">
+                <h1 class="text-center">Especialidades</h1>
+                
+                <!-- Menu Table -->
+                <div class="d-flex justify-content-between align-items-center p-3 mb-3" style="background-color: #548EFF; color: white;">
+                    <div>
+                        <a href="MarcarConsulta.html" class="btn btn-light text-dark me-2">
+                            <img src="CSS/IMG/Adicionar.png" alt="" style="height: 25px;"> Adicionar
+                        </a>
+                        <a href="#" class="btn btn-light text-dark">
+                            <img src="CSS/IMG/Deletar.png" alt="" style="height: 25px;"> Excluir
+                        </a>
+                    </div>
+                    <form class="d-flex">
+                        <input type="text" class="form-control me-2" placeholder="Buscar">
+                        <button class="btn btn-primary">
+                            <img src="CSS/IMG/LupaPesquisar.png" alt="" style="height: 20px;">
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Table -->
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col"><input type="checkbox"></th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Data da Consulta</th>
+                            <th scope="col">Hora da Consulta</th>
+                            <th scope="col">Retorno</th>
+                            <th scope="col">Cancelado</th>
+                            <th scope="col">Motivo do Cancelamento</th>
+                            <th scope="col">Médico</th>
+                            <th scope="col">Paciente</th>
+                            <th scope="col">Usuário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>2024-11-15</td>
+                            <td>09:30</td>
+                            <td>Sim</td>
+                            <td>Não</td>
+                            <td>-</td>
+                            <td>Dr. João Silva</td>
+                            <td>Ana Maria</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>2</td>
+                            <td>2024-11-20</td>
+                            <td>14:00</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Paciente indisponível</td>
+                            <td>Dra. Fernanda Souza</td>
+                            <td>Lucas Pereira</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>3</td>
+                            <td>2024-12-01</td>
+                            <td>11:00</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>-</td>
+                            <td>Dr. Carlos Lima</td>
+                            <td>Beatriz Santos</td>
+                            <td>Admin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-home bg-primary text-white text-center py-3 fixed-bottom">
+
+        <p>© 2024 Empresa X</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
