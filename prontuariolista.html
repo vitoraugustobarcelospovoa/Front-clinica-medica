@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Lista de Prontuários</title>
     <!-- Link do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link para o seu CSS personalizado -->
@@ -31,14 +31,14 @@
                 <!-- Exemplo de botão de menu oculto -->
             </div>
 
-            <!-- Seção de Cadastro de Usuário -->
+            <!-- Seção de Lista de Prontuários -->
             <div class="col-lg-10 principal-conteudo">
-                <h1 class="text-center mb-4">Cadastro de Usuário</h1>
+                <h1 class="text-center mb-4">Lista de Prontuários</h1>
 
                 <!-- Barra de Botões -->
                 <div class="d-flex justify-content-between align-items-center p-3 mb-3" style="background-color: #548EFF; color: white;">
                     <div>
-                        <a href="usuarioCadastro.html" class="btn btn-light text-dark me-2">
+                        <a href="prontuario.html" class="btn btn-light text-dark me-2">
                             <img src="CSS/IMG/Adicionar.png" alt="" style="height: 25px;"> Adicionar
                         </a>
                         <a href="#" class="btn btn-light text-dark">
@@ -53,51 +53,47 @@
                     </form>
                 </div>
 
-                <!-- Tabela de Usuários -->
+                <!-- Tabela de Prontuários -->
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead class="table-dark">
                             <tr>
                                 <th scope="col"><input type="checkbox"></th>
                                 <th scope="col">ID</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Sobrenome</th>
-                                <th scope="col">CPF</th>
-                                <th scope="col">Contato</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Endereço</th>
+                                <th scope="col">Paciente</th>
+                                <th scope="col">Médico</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Diagnóstico</th>
+                                <th scope="col">Tratamento</th>
                             </tr>
                         </thead>
-                        <tbody id="tabelaUsuarios">
+                        <tbody id="tabelaProntuarios">
                             <tr>
                                 <td><input type="checkbox"></td>
                                 <td>1</td>
-                                <td>João</td>
-                                <td>Silva</td>
-                                <td>123.456.789-00</td>
-                                <td>(11) 98765-4321</td>
-                                <td>joao.silva@example.com</td>
-                                <td>Rua A, 123</td>
+                                <td>João Silva</td>
+                                <td>Dr. João Silva</td>
+                                <td>01/01/2024</td>
+                                <td>Hipertensão</td>
+                                <td>Medicação</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox"></td>
                                 <td>2</td>
-                                <td>Maria</td>
-                                <td>Oliveira</td>
-                                <td>234.567.890-11</td>
-                                <td>(21) 91234-5678</td>
-                                <td>maria.oliveira@example.com</td>
-                                <td>Rua B, 456</td>
+                                <td>Maria Oliveira</td>
+                                <td>Dra. Maria Oliveira</td>
+                                <td>02/02/2024</td>
+                                <td>Dermatite</td>
+                                <td>Creme</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox"></td>
                                 <td>3</td>
-                                <td>José</td>
-                                <td>Santos</td>
-                                <td>345.678.901-22</td>
-                                <td>(31) 99876-5432</td>
-                                <td>jose.santos@example.com</td>
-                                <td>Rua C, 789</td>
+                                <td>José Santos</td>
+                                <td>Dr. José Santos</td>
+                                <td>03/03/2024</td>
+                                <td>Asma</td>
+                                <td>Inalação</td>
                             </tr>
                         </tbody>
                     </table>
@@ -114,6 +110,6 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script JS personalizado -->
-    <script src="JS/usuarios.js"></script>
+    <script src="JS/prontuarios.js"></script>
 </body>
 </html>
