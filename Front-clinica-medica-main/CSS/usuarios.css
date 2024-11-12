@@ -1,0 +1,253 @@
+@font-face{ 
+    font-family: "Roboto";
+    src: url("FONT/Roboto/RobotoCondensed-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+
+.header-home {
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-top: -50px;
+    z-index: 1000;
+}
+
+.logo-div {
+    width: 5%;
+}
+
+.logo-header {
+    height: 100%;
+    width: 100%;
+}
+
+.espaço-header {
+    width: 75%;
+}
+
+.adm-div {
+    padding-top: 10px;
+    text-align: right;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-adm {
+    height: 70%;
+    width: 20%;
+}
+
+.titulo-adm {
+    width: 5%;
+}
+
+.adm {
+    font-size: 17px;
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+
+.principal {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+.menu-vertical {
+    position: fixed;
+    display: block;
+    width: 5%;
+    height: 100%;
+    background-color: #106ABC;
+    z-index: 2000;
+}
+
+.menu-vertical:active {
+    width: 10%;
+
+}
+
+.botao-menu {
+    width: 23%;
+}
+
+
+.botao-div-menu {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botao-menu {
+    width: 40%;
+    height: 30%;
+    filter: invert(1) opacity(1.0);
+}
+
+.botao-menu:hover {
+    filter: invert(1) opacity(0.8);
+}
+
+.footer-home {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0192E3;
+    padding: 10px;
+    z-index: 3000;
+}
+
+.cadastro {
+    width: 100%;
+    height: 80vh;
+    padding-top: 2%;
+    padding-left: 15%;
+}
+
+.cadastro h1{
+    text-align: center;
+    margin-left: -250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #548EFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.barra-botoes {
+    background-color: #548EFF;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    height: 50px;
+}
+
+.barra-botoes .pesquisar{
+    margin-left: auto;
+    height: 40px;
+    width: -25px;
+    padding: 7.5px;
+    position: relative;
+    
+}
+.barra-botoes .campo{
+    margin-left: 600px;
+}
+
+button .adicionar, .excluir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 40px;
+    
+}
+
+.barra-botoes img{
+    height: 25px;
+    width: 25px;
+    padding: 7.5px;
+}
+
+.barra-botoes button:hover {
+    background-color: #003d80;
+}
+
+#formCadastro {
+    display: none; /* Oculto inicialmente */
+    margin-top: 10px;
+}
+#formPesquisar {
+    display: none; /* Campo de busca oculto inicialmente */
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-vertical {
+        display: none;
+    }
+
+    .principal-conteudo {
+        padding-left: 0%;
+        display: block;
+    }
+
+    .adm-div {
+        padding-top: 10px;
+        text-align: right;
+        width: 60%;
+    }
+
+    .logo-div {
+        width: 30%;
+    }
+    
+    .logo-header {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-home { 
+        position: relative;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Roboto";
+        font-weight: bolder;
+    }
+        
+  }
